@@ -2,7 +2,7 @@
 
 See http://framelessgrid.com/ for more information.
 
-# Contents
+## Contents
 
 - **frameless.less** contains a small CSS reset, some consistency fixes, as well as some customizable super-basic variables and functions for starting off a Frameless grid.
 - **frameless.scss** contains the same as the LESS file, but in SCSS instead.
@@ -10,6 +10,6 @@ See http://framelessgrid.com/ for more information.
 - **frameless.psd** is a basic Photoshop template for a Frameless grid with 48 px columns and 24 px gutters.
 - **frameless.js** is under development.
 
-# License
+## License
 
 All code licensed under CC0: http://creativecommons.org/publicdomain/zero/1.0/
