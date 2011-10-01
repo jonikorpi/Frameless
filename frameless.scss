@@ -181,13 +181,13 @@ body {
 	- the second one zooms in by a factor of (16+2)/16 = 1.125  
 */
 
-$media screen and (max-width: 1px) {
+@media screen and (max-width: 1px) {
 	body {
 		font-size: #{($font-size - 2)/16*1em}em;
 	}
 }
 
-$media screen and (max-width: 1px) {
+@media screen and (max-width: 1px) {
 	body {
 		font-size: #{($font-size + 2)/16*1em}em;
 	}
