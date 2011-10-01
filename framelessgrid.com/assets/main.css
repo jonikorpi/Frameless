@@ -177,7 +177,7 @@ article p, #colophon p {
   hyphens: auto;
 }
 #build figure {
-  margin: 0.7058823529411765em 0;
+  margin: 1.411764705882353em 0;
 }
 h2 {
   padding-top: 2.823529411764706em;
@@ -290,12 +290,11 @@ article section,
   padding-top: 1.411764705882353em;
   text-align: center;
 }
-#masthead h1, #masthead p {
-  display: inline;
-}
 #nav {
   padding: 1.411764705882353em 0 0;
   height: 2.823529411764706em;
+  width: 15.529411764705882em;
+  margin: 0 auto;
 }
 #nav li {
   list-style: none;
@@ -322,14 +321,13 @@ article section,
   clear: both;
   padding: 4.235294117647059em 0 1.411764705882353em;
 }
+#introduction span, #follow span {
+  display: block;
+}
 #grid {
   height: 15.529411764705882em;
   position: relative;
   overflow: hidden;
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
-  perspective: 1000;
 }
 .col {
   background: #e8e8e8;
@@ -339,10 +337,12 @@ article section,
   left: 50%;
   top: 0;
   margin-left: 0.7058823529411765em;
-  -webkit-transition: all 0.382s ease-out;
-  -moz-transition: all 0.382s ease-out;
-  -ms-transition: all 0.382s ease-out;
-  transition: all 0.382s ease-out;
+}
+#grid .col {
+  -webkit-transition: background-color 0.382s ease-out;
+  -moz-transition: background-color 0.382s ease-out;
+  -ms-transition: background-color 0.382s ease-out;
+  transition: background-color 0.382s ease-out;
 }
 .col2 {
   margin-left: 4.9411764705882355em;
@@ -462,6 +462,72 @@ article section,
 #build figure {
   height: 15.529411764705882em;
   background: #e8e8e8;
+  position: relative;
+  overflow: hidden;
+}
+#build .col {
+  background: #171717;
+  left: 0.7058823529411765em;
+}
+#fixed .col {
+  margin-top: 2.823529411764706em;
+}
+#fixed .measure {
+  height: 0.5882352941176471em;
+  width: 2.7058823529411766em;
+  margin: 0;
+  left: 1.3529411764705883em;
+  top: 1.411764705882353em;
+  border: 0.11764705882352941em solid #e84c38;
+  border-bottom: none;
+  background: none;
+}
+#fixed .measure2 {
+  width: 7.0588235294117645em;
+  border-left: none;
+  border-right: none;
+}
+#fixed .measure3 {
+  left: 5.588235294117647em;
+}
+#build #infinite {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 15.294117647058824em;
+  border: 0.11764705882352941em solid #e84c38;
+  -webkit-box-shadow: inset 0 0 0.47058823529411764em #616161;
+  -moz-box-shadow: inset 0 0 0.47058823529411764em #616161;
+  box-shadow: inset 0 0 0.47058823529411764em #616161;
+}
+.dot {
+  position: absolute;
+  bottom: 0.7058823529411765em;
+  left: 35.29411764705882em;
+  background: #171717;
+  height: 0.35294117647058826em;
+  width: 0.35294117647058826em;
+}
+.dot2 {
+  left: 35.99999999999999em;
+}
+.dot3 {
+  left: 36.705882352941174em;
+}
+.invisidot {
+  left: 38.11764705882352em;
+  background: none;
+}
+#center .col, #done .col {
+  left: 50%;
+}
+#center .center {
+  background: none;
+  width: 0;
+  border-right: 0.11764705882352941em dashed #e84c38;
+  margin: -0.058823529411764705em;
+}
+#done .active {
+  background: #e84c38;
 }
 #colophon {
   padding-top: 4.235294117647059em;
@@ -497,20 +563,8 @@ article section,
 .ie #colophon {
   width: 32.470588235294116em;
 }
-.ie #masthead h1,
-.ie #masthead p,
-.ie #introduction span,
-.ie #follow a {
-  display: block;
-}
-.ie #nav {
-  padding-left: 7.0588235294117645em;
-}
 .ie #nav li {
   display: inline;
-}
-ie. #nav li:first-child {
-  margin-left: 1.411764705882353em;
 }
 /*
 	Full page zooms
@@ -561,6 +615,12 @@ ie. #nav li:first-child {
     max-width: none;
     padding-left: 0;
     padding-right: 0;
+  }
+  #masthead h1,
+  #masthead p,
+  #introduction span,
+  #follow span {
+    display: inline;
   }
   .col3,
   .col4,
@@ -702,7 +762,7 @@ ie. #nav li:first-child {
   .col24 {
     background: #171717;
   }
-  #build div {
+  #build .wrapper {
     position: relative;
     padding-left: 16.941176470588236em;
     min-height: 11.294117647058824em;
@@ -714,6 +774,10 @@ ie. #nav li:first-child {
     position: absolute;
     left: 0;
     top: 0;
+  }
+  #build #infinite {
+    height: 11.058823529411766em;
+    width: 15.294117647058824em;
   }
   #colophon {
     margin-top: 4.235294117647059em;
@@ -758,7 +822,7 @@ ie. #nav li:first-child {
 */
 @media screen and (min-width: 1888px) {
   #masthead,
-  article .wrapper,
+  article .container,
   #introduction,
   #colophon {
     width: 108.70588235294117em;

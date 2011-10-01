@@ -110,43 +110,77 @@
 				<div class="col col36"></div>
 			</figure>
 			
-			<div class="wrapper">
+			<div class="container">
 				
 				<section id="build">
 					<h2>Building a Frameless grid</h2>
 				
-					<div>
+					<div class="wrapper">
 						<h3>1. Make a fixed-width grid.</h3>
 						
-						<figure>
-						
+						<figure id="fixed">
+							<div class="measure col"></div>
+							<div class="measure measure2 col"></div>
+							<div class="measure measure3 col"></div>
+							<div class="col col1"></div>
+							<div class="col col2"></div>
 						</figure>
 						
-						<p>Pick a column width, a gutter width, and other dimensions — you know, the usual stuff. Use whatever criteria it is that you usually use to create grids.</p>
+						<p>Pick a column width, a gutter width — you know, the usual stuff. Use whatever criteria it is that you usually use to create fixed-width grids.</p>
 					</div>
-					<div>
-						<h3>2. Center it in the viewport.</h3>
+					<div class="wrapper">	
+						<h3>2. Make it infinite.</h3>
 						
-						<figure>
-						
-						</figure>
-						
-						<p>Align your grid to the middle of your viewport. For a symmetric grid (left), align the center point of your viewport in the middle of the gutter between your centermost columns. For an asymmetric grid (right), align it in the middle of your centermost column.</p>
-					</div>
-					<div>	
-						<h3>3. Make it infinite.</h3>
-						
-						<figure>
-						
+						<figure id="infinite">
+							<div class="col col1"></div>
+							<div class="col col2"></div>
+							<div class="col col3"></div>
+							<div class="col col4"></div>
+							<div class="col col5"></div>
+							<div class="col col6"></div>
+							<div class="col col7"></div>
+							<div class="col col8"></div>
+							<div class="dot"></div>
+							<div class="dot dot2"></div>
+							<div class="dot dot3"></div>
+							<div class="dot invisidot"></div>
 						</figure>
 						
 						<p>Now, make your grid repeat endlessly. Imagine that no matter how wide you make your viewport, more and more columns come into view from the sides. Think of bees.  Imagine you're looking at an infinitely wide honeycomb.</p>
 					</div>
-					<div>	
-						<h3>4. That's it, really. Start using it.</h3>
+					<div class="wrapper">
+						<h3>3. Center it in the viewport.</h3>
 						
-						<figure>
+						<figure id="center">
+							<div class="col col1"></div>
+							<div class="col col2"></div>
+							<div class="col col3"></div>
+							<div class="col col4"></div>
+							<div class="col col5"></div>
+							<div class="col col19"></div>
+							<div class="col col20"></div>
+							<div class="col col21"></div>
+							<div class="col col22"></div>
+							<div class="col col23"></div>
+							<div class="col center"></div>
+						</figure>
 						
+						<p>Align your grid to the middle of your viewport. For a symmetric grid (left), align the center point of your viewport in the middle of the gutter between your centermost columns. For an asymmetric grid (right), align it in the middle of your centermost column.</p>
+					</div>
+					<div class="wrapper">	
+						<h3>4. That's it, really. Use columns as needed.</h3>
+						
+						<figure id="done">
+							<div class="col col1 active"></div>
+							<div class="col col2"></div>
+							<div class="col col3"></div>
+							<div class="col col4"></div>
+							<div class="col col5"></div>
+							<div class="col col19 active"></div>
+							<div class="col col20"></div>
+							<div class="col col21"></div>
+							<div class="col col22"></div>
+							<div class="col col23"></div>
 						</figure>
 			
 						<p>Adapt your design column by column, using media queries. Or don't. You can choose exactly when your layout should adapt. This site, for example, only adapts around 320, 480, 600, 912 and 1900 px.</p>
