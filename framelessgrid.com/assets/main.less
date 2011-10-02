@@ -270,13 +270,18 @@ a:hover, #copyright a:hover {
 		color: @background;
 	}
 
-a:active, #copyright a:active {
-	color: @emphasis;
-	border-bottom-color: @emphasis;
+a:active {
+	color: @aside;
+	border-bottom-color: @aside;
 }
 
+	#copyright a:active {
+		color: @emphasis;
+		border-bottom-color: @emphasis;
+	}
+
 	#nav a:active, #nav a:active .icon, #downloads a:active strong {
-		background: @emphasis;
+		background: @aside;
 	}
 
 ::selection {
@@ -347,7 +352,7 @@ body {
 
 #introduction {
 	clear: both;
-	padding: 72/@em 0 24/@em;
+	padding: 48/@em 0 24/@em;
 }
 
 	#introduction span, #follow span {
@@ -548,7 +553,7 @@ body {
 	0.882352941 0.941176471 1.058823529 1.117647059
 */
 
-@media screen and (max-width: 270px) {	
+@media screen and (max-width: 16.875em) {	
 	body {
 		font-size: (@font-size - 2)/16*1em;
 	}
@@ -558,25 +563,25 @@ body {
 	}
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 19.9375em) {
 	body {
 		font-size: (@font-size - 1)/16*1em;
 	}
 }
 
 @media 
-	screen and (min-width: 520px) and (max-width: 599px),
-	screen and (min-width: 720px) and (max-width: 911px),
-	screen and (min-width: 1240px) and (max-width: 1639px),
-	screen and (min-width: 2160px) {
+	screen and (min-width: 32.5em) and (max-width: 37.4375em),
+	screen and (min-width: 45em) and (max-width: 56.9375em),
+	screen and (min-width: 77.5em) and (max-width: 102.4375em),
+	screen and (min-width: 135em) {
 	body {
 		font-size: (@font-size + 1)/16*1em;
 	}
 }
 
 @media 
-	screen and (min-width: 1640px) and (max-width: 1887px),
-	screen and (min-width: 2400px) {
+	screen and (min-width: 102.5em) and (max-width: 117.9375em),
+	screen and (min-width: 150em) {
 	body {
 		font-size: (@font-size + 2)/16*1em;
 	}
@@ -589,7 +594,7 @@ body {
 	Zoomed out below 320 px
 */
 
-@media screen and (min-width: 240px) {
+@media screen and (min-width: 15em) {
 	
 	#masthead, #introduction, article section, #colophon {
 		width: @4cols;
@@ -615,7 +620,7 @@ body {
 	Zoomed in above 480 px
 */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 30em) {
 	
 	#masthead, #introduction, article section, #colophon {
 		width: @6cols;
@@ -650,7 +655,7 @@ body {
 	Zoomed in above 600 px
 */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
 	
 	#masthead, #introduction, article section, #colophon {
 		width: @8cols;
@@ -676,9 +681,13 @@ body {
 			right: 0; top: 12/@em;
 		}
 		
-	#introduction h1, #follow h1 {
-		.large();
+	#introduction {
+		padding-top: 72/@em;
 	}
+		
+		#introduction h1, #follow h1 {
+			.large();
+		}
 	
 	#grid {
 		height: @5cols;
@@ -720,7 +729,7 @@ body {
 	Zoomed in above 912 px
 */
 
-@media screen and (min-width: 912px) {
+@media screen and (min-width: 57em) {
 	
 	#masthead, #introduction, article section, #colophon {
 		width: @12cols;
@@ -780,8 +789,8 @@ body {
 
 	#colophon {
 		margin-top: 72/@em;
-		border-top: 1.1/@em solid @emphasis;
-		padding-top: 23/@em;
+		border-top: 2/@em solid @emphasis;
+		padding-top: 22/@em;
 	}
 		
 		#follow {
@@ -804,7 +813,7 @@ body {
 	
 }
 
-@media screen and (min-width: 912px) and (max-width: 1887px) {
+@media screen and (min-width: 57em) and (max-width: 117.9375em) {
 	
 	#downloads h3, #faq h3 {
 		float: left;
@@ -829,7 +838,7 @@ body {
 	Zoomed in above 1920 px
 */
 
-@media screen and (min-width: 1888px) {
+@media screen and (min-width: 118em) {
 
 	#masthead, article .container, #introduction, #colophon {
 		width: @13cols+@13cols+(24/@em);
@@ -902,6 +911,7 @@ body {
 		
 			#follow h1 {
 				.large();
+				font-style: normal;
 			}
 	
 		#promo, #author {
