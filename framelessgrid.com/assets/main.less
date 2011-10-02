@@ -304,6 +304,35 @@ body {
 
 
 /*
+	Fade-in
+*/
+
+h1, h2, h3, p, #nav li {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.382s ease-in-out;
+	   -moz-transition: opacity 0.382s ease-in-out;
+	        transition: opacity 0.382s ease-in-out;
+}
+
+.wf-loading h1, 
+.wf-loading h2, 
+.wf-loading h3, 
+.wf-loading p, 
+.wf-loading #nav li {
+	opacity: 0;
+}
+
+.ie.wf-loading h1, 
+.ie.wf-loading h2, 
+.ie.wf-loading h3, 
+.ie.wf-loading p, 
+.ie.wf-loading #nav li {
+	visibility: hidden;
+}
+
+
+/*
 	Common styles
 */
 
