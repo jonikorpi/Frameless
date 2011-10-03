@@ -560,8 +560,16 @@ h1, h2, h3, p, #nav li {
 	width: @8cols;
 }
 
+.ie #nav {
+	width: (48/@em) + @4cols;
+}
+
 .ie #nav li {
 	display: inline;
+}
+	
+.ie #nav li:first-child {
+	margin-left: 24/@em;
 }
 
 
