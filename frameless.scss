@@ -10,7 +10,7 @@
 //
 
 $font-size: 16; 		// Your base font-size in pixels
-$em: $font-size*1em;	// Shorthand for outputting ems
+$em: $font-size;	// Shorthand for outputting ems
 
 $column: 48;	// The column-width of your grid in pixels
 $gutter: 24;	// The gutter-width of your grid in pixels
@@ -20,23 +20,22 @@ $gutter: 24;	// The gutter-width of your grid in pixels
 // Column-widths in variables, in ems
 //
 
- $1col:  #{( 1 * ($column + $gutter) - $gutter) / $em}em; 
- $1cols: #{( 1 * ($column + $gutter) - $gutter) / $em}em; 
- $2cols: #{( 2 * ($column + $gutter) - $gutter) / $em}em;
- $3cols: #{( 3 * ($column + $gutter) - $gutter) / $em}em;
- $4cols: #{( 4 * ($column + $gutter) - $gutter) / $em}em;
- $5cols: #{( 5 * ($column + $gutter) - $gutter) / $em}em;
- $6cols: #{( 6 * ($column + $gutter) - $gutter) / $em}em;
- $7cols: #{( 7 * ($column + $gutter) - $gutter) / $em}em;
- $8cols: #{( 8 * ($column + $gutter) - $gutter) / $em}em;
- $9cols: #{( 9 * ($column + $gutter) - $gutter) / $em}em;
-$10cols: #{(10 * ($column + $gutter) - $gutter) / $em}em;
-$11cols: #{(11 * ($column + $gutter) - $gutter) / $em}em;
-$12cols: #{(12 * ($column + $gutter) - $gutter) / $em}em;
-$13cols: #{(13 * ($column + $gutter) - $gutter) / $em}em;
-$14cols: #{(14 * ($column + $gutter) - $gutter) / $em}em;
-$15cols: #{(15 * ($column + $gutter) - $gutter) / $em}em;
-$16cols: #{(16 * ($column + $gutter) - $gutter) / $em}em;
+ $cols1: #{( 1 * ($column + $gutter) - $gutter) / $em}em; 
+ $cols2: #{( 2 * ($column + $gutter) - $gutter) / $em}em;
+ $cols3: #{( 3 * ($column + $gutter) - $gutter) / $em}em;
+ $cols4: #{( 4 * ($column + $gutter) - $gutter) / $em}em;
+ $cols5: #{( 5 * ($column + $gutter) - $gutter) / $em}em;
+ $cols6: #{( 6 * ($column + $gutter) - $gutter) / $em}em;
+ $cols7: #{( 7 * ($column + $gutter) - $gutter) / $em}em;
+ $cols8: #{( 8 * ($column + $gutter) - $gutter) / $em}em;
+ $cols9: #{( 9 * ($column + $gutter) - $gutter) / $em}em;
+$cols10: #{(10 * ($column + $gutter) - $gutter) / $em}em;
+$cols11: #{(11 * ($column + $gutter) - $gutter) / $em}em;
+$cols12: #{(12 * ($column + $gutter) - $gutter) / $em}em;
+$cols13: #{(13 * ($column + $gutter) - $gutter) / $em}em;
+$cols14: #{(14 * ($column + $gutter) - $gutter) / $em}em;
+$cols15: #{(15 * ($column + $gutter) - $gutter) / $em}em;
+$cols16: #{(16 * ($column + $gutter) - $gutter) / $em}em;
 
 
 //
@@ -183,12 +182,12 @@ body {
 
 @media screen and (max-width: 1px) {
 	body {
-		font-size: #{($font-size - 2)/16*1em}em;
+		font-size: #{($font-size - 2)/16*1}em;
 	}
 }
 
 @media screen and (max-width: 1px) {
 	body {
-		font-size: #{($font-size + 2)/16*1em}em;
+		font-size: #{($font-size + 2)/16*1}em;
 	}
 }
