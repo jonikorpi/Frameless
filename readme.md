@@ -1,6 +1,6 @@
 # Dig responsive design? Hate fluid grids? Try a Frameless grid.
 
-See http://framelessgrid.com/ for more information.
+See <http://www.jonikorpi.com/frameless/> for more information.
 
 ## Contents
 
